@@ -1,0 +1,342 @@
+***SW1-ITALIA*** 
+
+SwITALIA#sh run
+Building configuration...
+
+Current configuration : 1720 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname SwITALIA
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+enable password 7 0822455D0A16504341595D
+!
+!
+!
+no ip domain-lookup
+ip domain-name cti-fmi.ro
+!
+username admin secret 5 $1$mERr$S3UmkqGQcDw6dk8CDb1hF.
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ description "Legatura cu SW Italia 179.228.48.2"
+ ip address 179.228.48.2 255.255.248.0
+!
+ip default-gateway 179.228.48.1
+!
+banner motd ^CServerul va fi oprit joi la ora 14:00!^C
+!
+!
+!
+line con 0
+ password 7 0822455D0A1606181C1B0D1739
+ logging synchronous
+ login
+ exec-timeout 10 15
+!
+line vty 0 4
+ exec-timeout 15 20
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 15 20
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+!
+!
+!
+end
+
+***SW3-INDIA***
+
+SW3INDIA#sh run
+Building configuration...
+
+Current configuration : 1710 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname SW3INDIA
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+enable password 7 0822455D0A16504341595D
+!
+!
+!
+no ip domain-lookup
+ip domain-name cti-fmi.ro
+!
+username admin secret 5 $1$mERr$S3UmkqGQcDw6dk8CDb1hF.
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ description "Legatura cu SW3INDIA 179.228.60.2/26"
+ ip address 179.228.60.2 255.255.255.192
+!
+ip default-gateway 179.228.60.1
+!
+banner motd ^CServerul va fi inchis!"
+^C
+!
+!
+!
+line con 0
+ password 7 0822455D0A1606181C1B0D1739
+ logging synchronous
+ login
+ exec-timeout 10 15
+!
+line vty 0 4
+ exec-timeout 10 15
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 10 15
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+!
+!
+!
+end
+
+
+***SW5-INDONEZIA***
+
+Sw5INDONEZIA#sh run
+Building configuration...
+
+Current configuration : 1750 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Sw5INDONEZIA
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+enable password 7 0822455D0A16504341595D
+!
+!
+!
+no ip domain-lookup
+ip domain-name cti-fmi.ro
+!
+username admin secret 5 $1$mERr$S3UmkqGQcDw6dk8CDb1hF.
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ description "Legatura cu 179.228.56.2/22"
+ ip address 179.228.56.2 255.255.252.0
+ ip helper-address 179.228.60.62
+!
+ip default-gateway 179.228.56.1
+!
+banner motd ^CServerul va fi oprit joi la ora 19:00!^C
+!
+!
+!
+line con 0
+ password 7 0822455D0A1606181C1B0D1739
+ logging synchronous
+ login
+ exec-timeout 10 15
+!
+line vty 0 4
+ exec-timeout 10 15
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 10 15
+ password 7 0822455D0A1613030B1B0D1739
+ logging synchronous
+ login local
+ transport input ssh
+!
+!
+!
+end
+
