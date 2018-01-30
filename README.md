@@ -1,2 +1,3 @@
 # ccna-lab
-CCNA Routin and Switching Lab
+CCNA Routing and Switching Lab
+ 
